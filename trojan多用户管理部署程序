@@ -1,5 +1,18 @@
 #!/bin/bash
 
+echo -e "\n欢迎使用喵哥一键trojan安装管理程序！\n"
+echo -e "本程序支持在线web页面和命令行两种方式管理trojan多用户，"
+echo -e "同时支持流量统计和流量限制功能，"
+echo -e "并且支持命令行模式管理，命令补全更是让操作更加便捷。\n"
+echo -e "另外，本程序集成了acme.sh证书申请功能，"
+echo -e "可以轻松申请SSL证书，让网站安全加密。\n"
+echo -e "您还可以通过本程序生成客户端配置文件，"
+echo -e "在线实时查看trojan日志，随时切换在线trojan和trojan-go，"
+echo -e "以及分享trojan://链接和二维码，方便快捷地分享链接。\n"
+echo -e "最后，本程序还支持将trojan链接转化为clash订阅地址，"
+echo -e "并且导入到clash_for_windows中，使用更加方便。\n"
+echo -e "感谢您使用喵哥一键trojan安装管理程序！\n"
+
 # 全局变量定义
 trojan_conf_path="/etc/trojan/config.json"
 trojan_go_conf_path="/etc/trojan-go/config.json"
