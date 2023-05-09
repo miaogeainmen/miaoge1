@@ -24,14 +24,14 @@ timedatectl set-ntp true
 bash <(curl -fsSL https://raw.githubusercontent.com/trojan-gfw/trojan-quickstart/master/trojan-quickstart.sh)
 
 # 生成全客户端订阅链接
-echo "请输入您的域名或IP地址："
-read domain
+#echo "请输入您的域名或IP地址："
+read -p "请输入您的域名或IP地址：" domain
 
-echo "请输入您的Trojan密码："
-read password
+#echo "请输入您的Trojan密码："
+read -p "请输入您的Trojan密码：" password
 
-echo "请输入用于生成订阅链接的路径："
-read subpath
+#echo "请输入用于生成订阅链接的路径："
+read -p "请输入用于生成订阅链接的路径：" subpath
 
 sub=$(cat <<EOF
 {
@@ -77,11 +77,11 @@ elif [ -f /usr/bin/yum ]; then
 fi
 
 # 自动配置域名和 SSL 证书
-echo "请输入您的域名："
-read domain
+#echo "请输入您的域名："
+read -p "请输入您的域名：" domain
 
-echo "请输入您的邮箱地址："
-read email
+#echo "请输入您的邮箱地址："
+read -p "请输入您的邮箱地址：" email
 
 echo "正在申请 Let's Encrypt SSL 证书，请稍等..."
 
